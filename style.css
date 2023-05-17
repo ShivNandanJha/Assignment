@@ -1,0 +1,77 @@
+.popup {
+    width: 90vw;
+    height: auto;
+    background-color: #d9d3d3ae;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  .popup-heading {
+    text-align: center;
+  }
+  
+  .popup-description {
+    text-align   : center;
+    margin-bottom: 20px;
+    opacity: 80%;
+  }
+  
+  .accordion-item {
+    background-color: #fff;
+    margin: 10px;
+    border: 1px solid #000;
+    padding: 10px;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .left-flex {
+    flex: 1;
+  }
+  
+  .right-flex {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  .crown-icon{
+    width: 5px;
+    height: 5px;
+  }
+  .package-description ul>li {
+    margin-top   : 5px;
+    margin-bottom: 10px;
+    opacity: 80%;
+  }
+  
+  .book-now-button {
+    background-color: #4974d6;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .package-price {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  
+  .package-duration {
+    font-weight: lighter;
+    opacity: 80%;
+    font-size: 12px;
+  }
+  
