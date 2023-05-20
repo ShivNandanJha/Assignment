@@ -1,77 +1,172 @@
-.popup {
-    width: 90vw;
-    height: auto;
-    background-color: #d9d3d3ae;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
-  
-  .popup-heading {
+* {
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav.heading {
+  text-align: center;
+  font-size: 1.5em;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-container {
+  width: 400px;
+  text-align: center;
+  padding: 15px 25px;
+  margin-bottom: 1em;
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-size: 1.25em;
+}
+
+.text {
+  margin: 1em 1em 0.5em 1em;
+}
+
+.image-input {
+  display: none;
+}
+
+.btn {
+  background-color: rgb(42, 42, 211);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.75em;
+  color: #fff;
+  padding: 0.5em 1em;
+  margin: 0.5em 1em 1em 1em;
+  cursor: pointer;
+}
+
+.img-container {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+.heart {
+  clip-path: path(
+    "M150 43.4375C125.138 -24.05 0 -14.025 0 88.0375C0 138.887 38.25 206.55 150 275.5C261.75 206.55 300 138.887 300 88.0375C300 -13.4375 175 -24.45 150 43.4375V43.4375Z"
+  );
+}
+
+.circle {
+  clip-path: ellipse(45% 45% at 50% 50%);
+}
+
+.square {
+  clip-path: inset(20px 20px 50px round 15px);
+}
+
+.rectangle {
+  clip-path: inset(20px 20px 70px round 15px);
+}
+
+.pop_up {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.pop_up-img-container {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape_btn {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 0.75em;
+  color: #000;
+  padding: 0.5em 1em;
+  margin: 0.5em 1em 1em 1em;
+  cursor: pointer;
+  height: 40px;
+  background-position: center;
+  background-size: contain;
+}
+
+.heart-btn {
+  width: 40px;
+  background-repeat: no-repeat;
+  background-image: url("images/heart.png");
+}
+
+.square-btn {
+  width: 40px;
+  background-repeat: no-repeat;
+  background-image: url("images/square.png");
+}
+
+.circle-btn {
+  width: 40px;
+  background-repeat: no-repeat;
+  background-image: url("images/circle.png");
+}
+
+.rectangle-btn {
+  width: 40px;
+  background-repeat: no-repeat;
+  background-image: url("images/rectangle.png");
+}
+
+.pop_up-btn {
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-container {
+    width: 300px;
     text-align: center;
+    padding: 15px 25px;
+    margin-bottom: 1em;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 1.25em;
   }
-  
-  .popup-description {
-    text-align   : center;
-    margin-bottom: 20px;
-    opacity: 80%;
+
+  .img-container {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
   }
-  
-  .accordion-item {
-    background-color: #fff;
-    margin: 10px;
-    border: 1px solid #000;
-    padding: 10px;
+
+  .pop_up-img-container {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
   }
-  
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Align items vertically */
-  }
-  
-  .left-flex {
-    flex: 1;
-  }
-  
-  .right-flex {
-    flex: 1;
-    text-align: right;
-  }
-  
-  .product-name {
-    font-weight: bold;
-  }
-  .crown-icon{
-    width: 5px;
-    height: 5px;
-  }
-  .package-description ul>li {
-    margin-top   : 5px;
-    margin-bottom: 10px;
-    opacity: 80%;
-  }
-  
-  .book-now-button {
-    background-color: #4974d6;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .package-price {
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 50px;
-  }
-  
-  .package-duration {
-    font-weight: lighter;
-    opacity: 80%;
-    font-size: 12px;
-  }
-  
+}

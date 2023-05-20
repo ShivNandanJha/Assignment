@@ -1,89 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class = "popup">
-    <h1  class = "popup-heading">  Find a Package that Right for you </h1>
-    <p   class = "popup-description"> Unleash your inner diva with our Ultimate Glam Package, designed exclusively for those seeking an extraordinary solo experience. Indulge in a full range of luxurious treatments, </p>
-        
-        <div  class = "accordion">
-        <div  class = "accordion-item">
-        <div  class = "flex-container">
-        <div  class = "left-flex">
-        <h2   class = "product-name">HD bridal makeup
-        <span class = "crown-icon">&#x1f451;</span>
-                
-                </h2>
-                <p class = "package-description">
-                    Package include
-                    <ul>
-                    <li>Includes facial</li>
-                    <li>manicure</li>
-                    <li> and pedicure</li>
-                </ul></p>
-              </div>
-              <div    class = "right-flex">
-              <button class = "book-now-button">Book Now</button>
-              <p      class = "package-price">$50</p>
-              <p      class = "package-duration">30 minutes</p>
-    
-                
-              </div>
-            </div>
-          </div>
-          
-          <div class = "accordion-item">
-          <div class = "flex-container">
-          <div class = "left-flex">
-          <h2  class = "product-name">Special occasion makeup like mehndi cocktail engagement </h2>
-          <p   class = "package-description">
-            Package include
-            <ul>
-                    <li>Includes facial</li>
-                    <li>manicure</li>
-                    <li> and pedicure</li>
-                </ul></p>
-              </div>
-              <div    class = "right-flex">
-              <button class = "book-now-button">Book Now</button>
-              <p      class = "package-price">$70</p>
-                
-                <p class = "package-duration">30 minutes</p>
-    
-                
-              </div>
-            </div>
-          </div>
-          
-          <div class = "accordion-item">
-          <div class = "flex-container">
-          <div class = "left-flex">
-          <h2  class = "product-name"> HD bridal makeup</h2>
-          <p   class = "package-description">
-            Package include        
-            <ul>
-                    <li>Includes facial</li>
-                    <li>manicure</li>
-                    <li> and pedicure</li>
-                </ul>
-            </p>
-              </div>
-              <div    class = "right-flex">
-              <button class = "book-now-button">Book Now</button>
-              <p      class = "package-price">$90</p>
-              <p      class = "package-duration">30 minutes</p>
-    
-                
-              </div>
-            </div>
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Celebrare Assignment</title>
+  </head>
+  <body>
+    <nav class="heading">
+      <i>Add Image/Icon</i>
+    </nav>
+    <div class="container">
+      <div class="text-container">
+        <label for="image-input" class="text">Upload Image</label>
+        <input
+          type="file"
+          id="image-input"
+          class="image-input"
+          accept="image/jpeg, image/png, image/jpg"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="Choose from Device"
+          title="Choose from Device"
+        />
       </div>
-</body>
+      <div class="img-container"></div>
+    </div>
+    <div class="pop_up">
+      <p>Uploaded Image</p>
+      <div class="pop_up-img-container"></div>
+      <div class="btn-container">
+        <button class="shape_btn original" title="Original">Original</button>
+        <button class="shape_btn heart-btn" title="Heart"></button>
+        <button class="shape_btn square-btn" title="Square"></button>
+        <button class="shape_btn circle-btn" title="Circle"></button>
+        <button class="shape_btn rectangle-btn" title="Rectangle"></button>
+      </div>
+      <div>
+        <input class="btn pop_up-btn" type="button" value="Use this image" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
