@@ -17,17 +17,17 @@ btn.addEventListener("click", () => {
 
 pop_up_btn.addEventListener("click", () => {
   container.style.display = "flex";
-  pop_up.style.display = "none";
+  pop_up.style.display    = "none";
 });
 
 image_input.addEventListener("change", function () {
   const reader = new FileReader();
   reader.addEventListener("load", () => {
-    const uploaded_image = reader.result;
-    image.style.backgroundImage = `url(${uploaded_image})`;
-    container.style.display = "none";
-    pop_up.style.display = "flex";
-    pop_up_image.style.backgroundImage = `url(${uploaded_image})`;
+    const uploaded_image                     = reader.result;
+          image.style.backgroundImage        = `url(${uploaded_image})`;
+          container.style.display            = "none";
+          pop_up.style.display               = "flex";
+          pop_up_image.style.backgroundImage = `url(${uploaded_image})`;
   });
   reader.readAsDataURL(this.files[0]);
 });
